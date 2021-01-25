@@ -1,0 +1,131 @@
+/*We use that (*) when we want apply a style or thing in every itens*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+/* All the space of the data */
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+/* Top part of the site */
+header{
+    background-color: #48c5ce;
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+
+.title{
+    font-size: 25px;
+}
+
+/*All the content is here */
+section{
+  padding: 20px;
+  background-image: url(../images/people.jpg);
+  background-size: cover;
+  /* Overflow fix the erro and make the image cover all the place */
+  overflow: hidden;
+}
+/* The conteiner of the form */
+.form_container{
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    padding: 20px;
+    float: right;
+}
+h2{
+    font-size: 16px;
+}
+/* Margin for H2 and P */
+.mb{
+    margin-bottom: 15px;
+}
+/* I applied the style in input and select */
+input,select{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+/* Here i specified the style for all the submit button*/
+input[type="submit"]{
+    color: white;
+    background-color:#48c5ce;
+    font-weight: bold;
+}
+
+select{
+    /* Here i removed de arrow of all browsers */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /* Here i choose the new arrow */
+    background-image: url(../images/arrow.jpg);
+    background-repeat:no-repeat ;
+    /* Arrow position  */
+    background-position-x: calc(100% - 10px) ;
+    background-position-y: center;
+
+}
+
+/* Bottom part of the site */
+footer{
+    background-color:#202121 ;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Picture */
+.picture{
+    width: 160px;
+}
+/* Description Data */
+.description{
+    /* Make the pictures and msg stay in one block */
+    display: inline-block;
+    /* Make the discription align on the left */
+    text-align: left;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+/* Description margin */
+.description p,.description h3{
+    margin-bottom: 20px;
+}
+
+.description h3{
+    font-size: 24px;
+}
+
+
+/* Here we change the style when the size be smaller */
+@media screen and (max-width:500px){
+/* New size */
+.form_container{
+float:none;
+margin: auto;
+}
+/* Description */
+.description{
+    display: block;
+    max-width: 100%;
+    margin-left: 0;
+}
+/* Title */
+.description h3 {
+    text-align: center;
+    margin-top: 10px;
+}      
+
+}
