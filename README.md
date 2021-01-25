@@ -1,5 +1,4 @@
-# Capture-page
-Hi, This is a simple project using HTML and CSS.
+
 # About 📝
 This file have.
 1. The header contains short text about a imaginary workshop.
